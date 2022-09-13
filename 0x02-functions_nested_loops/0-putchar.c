@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 /**
  * main - prints _putchar as message
@@ -7,14 +7,7 @@
  */
 int main(void)
 {
-	int str[] = {95, 112, 117, 116, 99, 104, 97, 114};
-	int c, sz;
-
-	sz = sizeof(str) / sizeof(int);
-	for (c = 0; c < sz; c++)
+	int _putchar(char c)
 	{
-		_putchar(str[c]);
+		return (write(1, &c, 1));
 	}
-	_putchar('\n');
-	return (0);
-}
