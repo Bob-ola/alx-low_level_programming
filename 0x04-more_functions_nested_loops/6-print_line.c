@@ -2,7 +2,7 @@
 
 /**
  * print_line - prints a straight line n times
- *
+ * @n: number of times the character is printed
  * Return: no return
  */
 void print_line(int n)
